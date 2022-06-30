@@ -1,0 +1,25 @@
+{
+  "name": "leave-a-message",
+  "version": "1.0.0",
+  "description": "leave a message on a webpage",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Proxtx/leave-a-message.git"
+  },
+  "author": "Proxtx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Proxtx/leave-a-message/issues"
+  },
+  "homepage": "https://github.com/Proxtx/leave-a-message#readme",
+  "dependencies": {
+    "@proxtx/config": "^1.0.2",
+    "@proxtx/framework": "^1.4.3",
+    "@proxtx/material": "^1.0.865"
+  }
+}
