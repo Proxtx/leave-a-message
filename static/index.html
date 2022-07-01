@@ -10,17 +10,20 @@
   <body>
     <m-card>
       <div id="controlWrap">
-        <m-text-input placeholder="Message"></m-text-input
-        ><m-button>Spawn</m-button>
+        <m-text-input placeholder="Message" id="message"></m-text-input>
         <m-divider type="vertical"></m-divider>
         <m-text>Rotation</m-text>
-        <m-button>Left</m-button>
-        <m-button>Right</m-button>
+        <m-button onclick="rotateLeft();">Left</m-button>
+        <m-button onclick="rotateRight()">Right</m-button>
         <m-divider type="vertical"></m-divider>
         <m-text>Color</m-text>
-        <input value="#ffffff" type="color" />
+        <input
+          value="#ffffff"
+          type="color"
+          onchange="changeColor(this.value)"
+        />
         <m-divider type="vertical"></m-divider>
-        <m-button>Send</m-button>
+        <m-button onclick="send()">Send</m-button>
       </div>
     </m-card>
     <br />
@@ -28,6 +31,7 @@
     <m-card wave="false">
       <canvas id="canvas" width="300" height="300"></canvas>
     </m-card>
+    <script src="/private/getCanvas.js" class="server"></script>
     <script src="/lib/guiLoader.js" type="module"></script>
     <script src="main.js" type="module"></script>
   </body>
