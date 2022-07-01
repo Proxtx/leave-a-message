@@ -8,7 +8,7 @@ let currentObject = {
   text: "",
   posX: 50,
   posY: 50,
-  color: "white",
+  color: "black",
   rotation: 0,
 };
 
