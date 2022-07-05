@@ -1,6 +1,8 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
+ctx.font = "10px sans-serif";
+
 let objectList = framework.data.canvas;
 
 let currentObject = {
